@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop Stock Management</title>
+</head>
+<body>
+    <h1>Candy Shop Stock Management</h1>
+
+    <h2>Add Candy</h2>
+    <form id="addCandyForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" required><br><br>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" required><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" required><br><br>
+
+        <button type="submit">Add Candy</button>
+    </form>
+
+    <h2>Candy List</h2>
+    <table id="candyTable">
+        <tr data-id="candy1">
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
