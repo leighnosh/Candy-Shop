@@ -82,7 +82,6 @@ document
       });
   });
 
-// Fetch initial data and update the table
 axios
   .get(apiUrl)
   .then(function (response) {
